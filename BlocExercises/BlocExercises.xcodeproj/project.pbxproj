@@ -131,7 +131,6 @@
 				931AB0C81946478E00B4FB76 /* Number Variables */,
 				931AB0CE1946606400B4FB76 /* Strings and String Formatting */,
 				931AB0C21945080300B4FB76 /* If / Else Statements and the Ternary Operator */,
-				17E46D1D1947638D0018BD4C /* Equality */,
 				936964AB1947CE610021C271 /* Loops */,
 				9369649F1947AF7B0021C271 /* Arrays */,
 				936964A71947C8A50021C271 /* Dictionaries */,
@@ -155,6 +154,7 @@
 		931AB0C21945080300B4FB76 /* If / Else Statements and the Ternary Operator */ = {
 			isa = PBXGroup;
 			children = (
+				17E46D1D1947638D0018BD4C /* Equality */,
 				931AB0C3194508D300B4FB76 /* MarysAppleHandler.h */,
 				931AB0C4194508D300B4FB76 /* MarysAppleHandler.m */,
 				931AB0C61945097100B4FB76 /* MarysAppleHandlerTests.m */,
