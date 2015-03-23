@@ -27,14 +27,15 @@
 }
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
-    /* WORK HERE */
-    NSPredicate *containsWorf = [NSPredicate predicateWithFormat:@"SELF MATCHES[c] 'worf'"];
-    NSArray *arrayWithWorf = [characterArray filteredArrayUsingPredicate:containsWorf];
+    NSPredicate *containsWorf = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] 'worf'"];
     
-    if (arrayWithWorf.count > 0) {
-        return YES;
-    } else {
+    NSArray *filteredArray = [characterArray filteredArrayUsingPredicate:containsWorf];
+    if (filteredArray.count == 0) {
+        NSLog(@"Array count: %ld", filteredArray.count);
         return NO;
+    } else {
+        NSLog(@"Array count: %ld", filteredArray.count);
+        return  YES;
     }
 }
 @end
